@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "josfin";
+    src: url(./JosefinSans-Regular.ttf);
+}
+body{
+    margin: 0;
+    font-family: "josfin";
+}
+.btn{
+    background:linear-gradient(to right, #265537, #183522, #265537, #183522, #265537);
+  border: none;
+  text-align: center;
+  width: 60%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+  font-family: "josfin";
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.full{
+    height: 100vh;
+    background-image: url(./bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main{
+
+    width: 50%;
+    margin:0 auto ;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.774);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px solid rgb(214, 180, 27)
+}
+.main input{
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color: #ffffff00;
+    border-bottom: 1px solid #265537;
+}
+.main h1{
+    color: #265537;
+
+};
+
+
+
+
+
+
+
+@media  screen and (max-width:650px) {
+    .full{
+        background-image: url(./bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        
+}
+.main{
+        width:90%;
+        padding:20px;
+    }
+    .main h1{
+font-size: large    
+    };
+}
